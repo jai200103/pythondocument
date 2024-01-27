@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+
+    <body>
+
+        <div class = "container">
+            <div class = "block_1" id="block">
+                <nav id = "navbar">
+                    <header style="font-weight: bolder; font-size: x-large;">Python Documentation</header>
+                    <ul>
+                        <li>
+                            <a href= "#Introduction" class = "nav-link" target="_self">Introduction</a>
+                        </li>
+        
+                        <li>
+                            <a href= "#Why_Python" class = "nav-link" target="_self">Why Python</a>
+                        </li>
+        
+                        <li>
+                            <a href= "#Hello_World" class = "nav-link" target="_self">Hello World</a>
+                        </li>
+        
+                        <li>
+                            <a href= "#Variables" class = "nav-link" target="_self">Variables</a>
+                        </li>
+        
+                        <li>
+                            <a href= "#Data_Types" class = "nav-link" target="_self">Data Types</a>
+                        </li>
+        
+                        <li>
+                            <a href= "#Casting" class = "nav-link" target="_self">Casting</a>
+                        </li>
+        
+                        <li>
+                            <a href= "#Operators" class = "nav-link" target="_self">Operators</a>
+                        </li>
+        
+                    </ul>
+        
+                </nav>
+            </div>
+            
+            <div class = "block" id = "block">
+                <main id="main-doc">
+                    <section class="main-section" id = "Introduction">
+                        <header style="font-weight: bolder; font-size: x-large;">Introduction</header>
+                        <article>
+                            <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+                            <p>Python can be used on a server to create web applications.</p>
+        
+                            It is used for :
+                            <ul>
+                                <li>web development (server-side)</li>
+                                <li>software development</li>
+                                <li>mathematics</li>
+                                <li>system scripting</li>
+                                <li>Python can be used on a server to create web applications.</li>
+                                <li>Python can be used alongside software to create workflows.</li>
+                                <li>Python can connect to database systems. It can also read and modify files.</li>
+                                <li>Python can be used to handle big data and perform complex mathematics.</li>
+                                <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+                                </ul>
+                        </article>
+                    </section>
+        <br>
+                    <section class="main-section" id = "Why_Python">
+        
+                        <header style="font-weight: bolder; font-size: x-large;">Why Python</header>
+                        <article>
+                            <p>Python was designed for readability, and has some similarities to the English language with influence from mathematics.
+                                Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
+                                Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.
+                            </p>
+                            <ul>
+                                <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+                                <li>Python has a simple syntax similar to the English language.</li>
+                                <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+                                <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+                                <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+                                </ul>
+                        </article>
+                    </section>
+        
+        <br>
+                    <section class="main-section" id = "Hello_World">
+        
+                        <header style="font-weight: bolder; font-size: x-large;">Hello World</header>
+        
+                        <p> To get started with writing Python, open the Python IDLE and write your first "Hello world" Python code:</p>
+                        <code> 
+                            <pre>
+            print("Hello, World!")
+                            </pre>
+                        </code>
+                        
+                    </section>
+                    <br>
+        
+                    <section class="main-section" id = "Variables">
+        
+                        <header style="font-weight: bolder; font-size: x-large;">Variables</header>
+                        <p>Variables are containers for storing data values.</p>
+        
+                            <pre>
+        Python has no command for declaring a variable.
+        A variable is created the moment you first assign a value to it.
+                            </pre>
+        
+                            <p>Example :
+                            </p>
+                            <code>
+                                <pre>
+            x = 5
+            y = "John"
+            print(x)
+            print(y)
+                                </pre>
+                            </code>
+                            <p>Variables do not need to be declared with any particular type, and can even change type after they have been set.</p>
+                            <code>
+                                <pre>
+            x = 4               # x is of type int
+            x = "Sally"     # x is now of type str
+            print(x)
+                                </pre>
+                            </code>
+                    </section>
+        
+                    <section class="main-section" id = "Data_Types">
+        
+                        <header style="font-weight: bolder; font-size: x-large;">Data Types</header>
+                        <p>
+                            <pre>
+            In programming, data type is an important concept.
+            Variables can store data of different types, and different types can do different things.                        
+            Python has the following data types built-in by default, in these categories:
+                            </pre>
+                        </p>
+        
+                        <code>
+                            <pre>
+            Text Type:	        str
+            Numeric Types:	int, float, complex
+            Sequence Types:	list, tuple, range
+            Mapping Type:	dict
+            Set Types:	        set, frozenset
+            Boolean Type:	bool
+            Binary Types:	bytes, bytearray, memoryview
+            None Type:	        NoneType
+                            </pre>
+                        </code>
+                        
+                    </section>
+        
+        
+                    <section class="main-section" id = "Casting">
+        
+                        <header style="font-weight: bolder; font-size: x-large;">Casting</header>
+                        <p>
+                            There may be times when you want to specify a type on to a variable. This can be done with casting. Python is an object-orientated language, and as such it uses classes to define data types, including its primitive types.
+                        </p>
+                        <p>Casting in python is therefore done using constructor functions:</p>
+                        <ul>
+                            <li><span>int()</span> - constructs an integer number from an integer literal, a float literal (by removing 
+                            all decimals), or a string literal (providing the string represents a whole number)</li>
+                            <li><span >float()</span> - constructs a float number from an integer literal, a float literal or a string literal (providing the string represents a float or an integer)</li>
+                            <li><span>str()</span> - constructs a string from a wide variety of data types, including strings, integer literals and float literals</li>
+                        </ul>
+        
+                        Integer example :<br>
+                        <code>
+                            <pre>
+            x = int(1)   # x will be 1
+            y = int(2.8) # y will be 2
+            z = int("3") # z will be 3
+                            </pre>
+                        </code>
+        
+                        Floats example :<br>
+                        <code>
+                            <pre>
+            x = float(1)     # x will be 1.0
+            y = float(2.8)   # y will be 2.8
+            z = float("3")   # z will be 3.0
+            w = float("4.2") # w will be 4.2
+                            </pre>
+                        </code>
+        
+                        Strings example :<br>
+                        <code>
+                            <pre>
+            x = str("s1") # x will be 's1'
+            y = str(2)    # y will be '2'
+            z = str(3.0)  # z will be '3.0'
+                            </pre>
+                        </code>
+                        
+                    </section>
+        
+        
+        
+                    <section class="main-section" id = "Operators">
+        
+                        <header style="font-weight: bolder; font-size: x-large;">Operators</header>
+                        <p>Operators are used to perform operations on variables and values.</p>
+                        <p>Python divides the operators in the following groups:</p>
+                        <ul>
+                            <li>Arithmetic operators</li>
+                            <li>Assignment operators</li>
+                            <li>Comparison operators</li>
+                            <li>Logical operators</li>
+                            <li>Identity operators</li>
+                            <li>Membership operators</li>
+                            <li>Bitwise operators</li>
+                        </ul>
+        
+                        <table border = "2px">
+                            <tbody><tr>
+                            <th >Operator</th>
+                            <th >Name</th>
+                            <th >Example</th>
+                            </tr>
+        
+                            <tr>
+                            <td>+</td>
+                            <td>Addition</td>
+                            <td>x + y</td>
+                            </tr>
+        
+                            <tr>
+                            <td>-</td>
+                            <td>Subtraction</td>
+                            <td>x - y</td>
+                            </tr>
+        
+                            <tr>
+                            <td>*</td>
+                            <td>Multiplication</td>
+                            <td>x * y</td>
+                            </tr>
+        
+                            <tr>
+                            <td>/</td>
+                            <td>Division</td>
+                            <td>x / y</td>
+                            </tr>
+        
+                            <tr>
+                            <td>%</td>
+                            <td>Modulus</td>
+                            <td>x % y</td>
+                            </tr>
+        
+                            <tr>
+                            <td>**</td>
+                            <td>Exponentiation</td>
+                            <td>x ** y</td>
+                            </tr>
+        
+                            <tr>
+                            <td>//</td>
+                            <td>Floor division</td>
+                            <td>x // y</td>
+                            </tr>
+                            </tbody></table>
+                        
+                    </section>
+        
+                </main>
+                <br>
+                <video  controls>
+                    <source src="https://youtu.be/sn3CHauUbQ0" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+        
+            </div>
+        </div>
+    </body>
+</html>
